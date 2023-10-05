@@ -1,5 +1,5 @@
 /*===== GOOGLE FONTS =====*/
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700&display=swap");
 /*===== VARIABLES CSS =====*/
 :root {
   --header-height: 3rem;
@@ -8,10 +8,11 @@
   /*Purple 260 - Red 355 - Blue 224 - Pink 340*/
   /* HSL color mode */
   --hue-color: 224;
-  --first-color: hsl(var(--hue-color), 89%, 60%);
+  /* --first-color: hsl(var(--hue-color), 60%, 60%); */
+  --first-color: rgb(0, 150, 255);
   --second-color: hsl(var(--hue-color), 56%, 12%);
   /*===== Fuente y tipografia =====*/
-  --body-font: 'Poppins', sans-serif;
+  --body-font: 'Lato', sans-serif;
   --big-font-size: 2rem;
   --h2-font-size: 1.25rem;
   --normal-font-size: .938rem;
@@ -112,7 +113,7 @@ img {
   top: 0;
   left: 0;
   z-index: var(--z-fixed);
-  background-color: #fff;
+  background-color: rgb(173, 216, 230);
   box-shadow: 0 1px 4px rgba(146, 161, 176, 0.15);
 }
 
@@ -122,7 +123,9 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-weight: var(--font-semi);
+  font-weight: 400;
+  font-size: 20px;
+  font-family: 'Lato', sans-serif;
 }
 
 @media screen and (max-width: 767px) {
@@ -130,11 +133,15 @@ img {
     position: fixed;
     top: var(--header-height);
     right: -100%;
-    width: 80%;
+    width: 40%;
     height: 100%;
     padding: 2rem;
-    background-color: var(--second-color);
-    transition: .5s;
+    background-color: #fff;
+    align-items: center;
+    transition: transform 2s ease-in;
+    border-left: 1px solid black;
+    flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -144,11 +151,13 @@ img {
 
 .nav__link {
   position: relative;
-  color: #fff;
+  color: black;
+  font-size: 14px;
 }
 
 .nav__link:hover {
   position: relative;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
 }
 
 .nav__link:hover::after {
@@ -247,6 +256,17 @@ img {
   font-weight: var(--font-semi);
   border-radius: .5rem;
   transition: .3s;
+}
+
+.button__cv {
+  display: inline-block;
+  background-color: #fff;
+  color: var(--first-color);
+  padding: .75rem 2.5rem;
+  font-weight: var(--font-semi);
+  border-radius: .5rem;
+  transition: .3s;
+  border: var(--first-color) 0.1rem solid;
 }
 
 .button:hover {
