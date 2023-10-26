@@ -231,7 +231,7 @@ img {
 }
 
 .home__social-icon:hover {
-  color: var(--first-color);
+  color: rgb(173, 216, 230);
 }
 
 .home__img {
