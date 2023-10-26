@@ -242,7 +242,7 @@ img {
 }
 
 .home__blob {
-  fill: var(--first-color);
+  fill: rgb(173, 216, 230);
 }
 
 .home__blob-img {
@@ -303,6 +303,11 @@ img {
 .about__container {
   row-gap: 2rem;
   text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .about__subtitle {
@@ -459,7 +464,7 @@ img {
   font-weight: var(--font-semi);
   padding: 1rem;
   border-radius: .5rem;
-  border: 1.5px solid var(--second-color);
+  border: 1.5px solid rgb(173, 216, 230);
   outline: none;
   margin-bottom: var(--mb-4);
 }
@@ -516,6 +521,24 @@ img {
   #skillsMain {
     flex-direction: row;
     width: 320px;
+  }
+  #selfpic {
+    width: 240px;
+    height: 240px;
+    margin: 10px;
+    margin-top: 50px;
+  }
+  .about__container {
+    margin: 20px;
+  }
+  .work__container {
+    margin: 20px;
+  }
+  .contact__container {
+    margin: 20px;
+  }
+  .home {
+    margin: 20px;
   }
 }
 
